@@ -43,18 +43,13 @@ body {
   align-items: center;
 }
 
-.two {
+.two, .three, .four, .five, .six {
   display: flex;
   justify-content: space-between;
 }
 
 .two .pip:nth-of-type(2) {
   align-self: flex-end;
-}
-
-.three {
-  display: flex;
-  justify-content: space-between;
 }
 
 .three .pip:nth-of-type(2) {
@@ -65,13 +60,12 @@ body {
   align-self: flex-end;
 }
 
-.four {
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
+.four .column, .five .column, .six .column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.five .column:nth-of-type(2) {
+  justify-content: center;
 }
