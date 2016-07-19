@@ -51,3 +51,27 @@ body {
 .two .pip:nth-of-type(2) {
   align-self: flex-end;
 }
+
+.three {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three .pip:nth-of-type(2) {
+  align-self: center;
+}
+
+.three .pip:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.four {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
