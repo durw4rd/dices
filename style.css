@@ -24,6 +24,15 @@ body {
   margin-top: 50px;
 }
 
+.thumb {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  /*margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;*/
+}
+
 .face {
   width: 200px;
   height: 200px;
@@ -100,12 +109,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 250px;
+  height: 80px;
+  border: 4px solid cyan;
+  padding: 0 20px 0 20px;
   font: helvetica, sans-serif;
-  color: white;
+  background-color: #999;
+  color: cyan;
   text-align: center;
   font-size: 18px;
   font-variant: small-caps;
   cursor: pointer;
+}
+
+.x:hover {
+  background-color: cyan;
+  color: #999;
+  border: 4px solid #999;
 }
 
 .red-background {
