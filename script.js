@@ -13,7 +13,7 @@ var main = function() {
     var i = Math.random();
     console.log(i);
     if(i <= 0.16) {
-      $('.one').show();
+      $('.one').show(600);
       $('.one-thumb').addClass('red-background');
       $('.two').hide();
       $('.three').hide();
@@ -22,7 +22,7 @@ var main = function() {
       $('.six').hide();
     } else if(i > 0.16 && i <= 0.33) {
       $('.one').hide();
-      $('.two').show();
+      $('.two').show(600);
       $('.two-thumb').addClass('red-background');
       $('.three').hide();
       $('.four').hide();
@@ -31,7 +31,7 @@ var main = function() {
     } else if(i > 0.33 && i <= 0.5) {
       $('.one').hide();
       $('.two').hide();
-      $('.three').show();
+      $('.three').show(600);
       $('.three-thumb').addClass('red-background');
       $('.four').hide();
       $('.five').hide();
@@ -40,7 +40,7 @@ var main = function() {
       $('.one').hide();
       $('.two').hide();
       $('.three').hide();
-      $('.four').show();
+      $('.four').show(600);
       $('.four-thumb').addClass('red-background');
       $('.five').hide();
       $('.six').hide();
@@ -49,7 +49,7 @@ var main = function() {
       $('.two').hide();
       $('.three').hide();
       $('.four').hide();
-      $('.five').show();
+      $('.five').show(600);
       $('.five-thumb').addClass('red-background');
       $('.six').hide();
     } else {
@@ -58,7 +58,7 @@ var main = function() {
       $('.three').hide();
       $('.four').hide();
       $('.five').hide();
-      $('.six').show();
+      $('.six').show(600);
       $('.six-thumb').addClass('red-background');
     }
   });
