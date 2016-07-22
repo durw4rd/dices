@@ -1,6 +1,9 @@
 body {
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -47,35 +50,64 @@ body {
   background-color: #333;
 }
 
-.one {
+.one, .one-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.two, .three, .four, .five, .six {
+.two, .three, .four, .five, .six, .two-thumb, .three-thumb, .four-thumb, .five-thumb, .six-thumb {
   display: flex;
   justify-content: space-between;
 }
 
-.two .pip:nth-of-type(2) {
+.one-thumb, .two-thumb, .three-thumb, .four-thumb, .five-thumb, .six-thumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.one-thumb .pip, .two-thumb .pip, .three-thumb .pip, .four-thumb .pip, .five-thumb .pip, .six-thumb .pip {
+  width: 20px;
+  height: 20px;
+}
+
+.two .pip:nth-of-type(2), .two-thumb .pip:nth-of-type(2) {
   align-self: flex-end;
 }
 
-.three .pip:nth-of-type(2) {
+.three .pip:nth-of-type(2), .three-thumb .pip:nth-of-type(2) {
   align-self: center;
 }
 
-.three .pip:nth-of-type(3) {
+.three .pip:nth-of-type(3), .three-thumb .pip:nth-of-type(3) {
   align-self: flex-end;
 }
 
-.four .column, .five .column, .six .column {
+.four .column, .five .column, .six .column, .four-thumb .column, .five-thumb .column, .six-thumb .column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.five .column:nth-of-type(2) {
+.five .column:nth-of-type(2), .five-thumb .column:nth-of-type(2) {
   justify-content: center;
+}
+
+.x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+
+.red-background {
+  background-color: red;
 }
