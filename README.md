@@ -7,3 +7,4 @@ For opening the page locally, clone whole repository and open <tt>index.html</tt
 Live version available at: http://faces-of-a-dice.bitballoon.com/.
 
 *This is app in not cross-browser compatiple, will work only on modern versions of Mozilla or Chrome browsers.
+BUT has mobile friendly version if you needed to play on the road.

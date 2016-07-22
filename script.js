@@ -62,6 +62,11 @@ var main = function() {
       $('.six-thumb').addClass('red-background');
     }
   });
+  if ($(window).width() < 600) {
+     $('.thumb').hide();
+  } else {
+    $('.thumb').show();
+  };
 }
 
 $(document).ready(main);
