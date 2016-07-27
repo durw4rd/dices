@@ -8,6 +8,7 @@
   margin: 40px;
   padding: 15px;
   transform: scale(1);
+  opacity: 0;
   /*transition: all 250ms ease-in;*/
 }
 
@@ -36,6 +37,7 @@
   border-radius: 5px;
   margin: 14px;
   padding: 5px;
+  opacity: 1;
 }
 
 .one-thumb .pip, .two-thumb .pip, .three-thumb .pip, .four-thumb .pip, .five-thumb .pip, .six-thumb .pip {

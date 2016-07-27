@@ -1,5 +1,7 @@
 var main = function() {
 
+  TweenMax.from($('.heading'), 1.5, {delay: 0.5, y: "-100", opacity: 0, ease: Elastic.easeOut});
+
   var hideFaces = function() {
     $('.one').hide();
     $('.two').hide();
@@ -8,7 +10,6 @@ var main = function() {
     $('.five').hide();
     $('.six').hide();
   };
-
   hideFaces();
 
   $('.throw-button').click(function() {
