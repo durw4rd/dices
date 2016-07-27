@@ -1,20 +1,37 @@
 /* body section 1 - big dice upon throw */
 .body-1 {
-  flex: 2 2 250px;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2 2 250px;
+      -ms-flex: 2 2 250px;
+          flex: 2 2 250px;
   min-height: 250px;
   min-width: 85%;
 }
 
 .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-top: 50px;
 }
 
 /* body section 2 - thumbnails with highlight of the thrown number */
 .body-2 {
-  flex: 1 1 150px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 150px;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
   min-width: 85%;
 }

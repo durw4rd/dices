@@ -1,10 +1,26 @@
 /* header section - main heading + throw button */
 header {
-  flex: 0 0 200px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 200px;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heading-box {
@@ -12,7 +28,10 @@ header {
 }
 
 .heading {
-  flex: 0 0 100px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100px;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -27,7 +46,10 @@ header {
 }
 
 .throw-button {
-  flex: 0 0 65px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65px;
+      -ms-flex: 0 0 65px;
+          flex: 0 0 65px;
 
   width: 150px;
   height: 65px;
@@ -46,7 +68,9 @@ header {
 }
 
 .throw-button p {
-  transform: translateY(-13px);
+  -webkit-transform: translateY(-13px);
+      -ms-transform: translateY(-13px);
+          transform: translateY(-13px);
 }
 
 .throw-button:hover {

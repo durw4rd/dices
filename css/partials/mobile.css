@@ -19,15 +19,21 @@
 }
 
 .two .pip-mobile:nth-of-type(2) {
-  align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 
 .three .pip-mobile:nth-of-type(2) {
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .three .pip-mobile:nth-of-type(3) {
-  align-self: flex-end;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
 }
 
 .footer-mobile section p {
