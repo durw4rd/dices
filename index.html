@@ -5,118 +5,138 @@
   <title>Dices</title>
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic,500,500italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
-  <script src="jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-  <h1 class="header">faces of a dice</h1>
-  <div class="x">
-    <p>click me and i will generate a dice for you!</p>
-    <!-- <div class="face one">
-      <span class="pip"></span>
-    </div> -->
+  <div class="main">
+    <!-- header section with the button -->
+    <header>
+      <h1 class="heading">faces of a dice</h1>
+      <div class="throw-button">
+        <p>THROW a dice!</p>
+      </div>
+    </header>
+    <!-- big dices that are shown upon throw -->
+    <section class="body-1">
+      <div class="container">
+        <div class="face one">
+          <span class="pip"></span>
+        </div>
+        <div class="face two">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="face three">
+          <span class="pip"></span>
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="face four">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+        <div class="face five">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+        <div class="face six">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- thumbails with highlight function -->
+    <section class="body-2">
+      <div class="container thumb">
+        <div class="face one-thumb">
+          <span class="pip"></span>
+        </div>
+        <div class="face two-thumb">
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="face three-thumb">
+          <span class="pip"></span>
+          <span class="pip"></span>
+          <span class="pip"></span>
+        </div>
+        <div class="face four-thumb">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+        <div class="face five-thumb">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+        <div class="face six-thumb">
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <section>
+        <p>Build by Michal Fasanek as an excercise when following the 'Flexbox starter course' created by Landron Schropp.</p>
+        <p>Enjoy responsibly.</P>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2016</p>
+      </section>
+    </footer>
   </div>
-  <div class="container">
-    <div class="face one">
-      <span class="pip"></span>
-    </div>
-    <div class="face two">
-      <span class="pip"></span>
-      <span class="pip"></span>
-    </div>
-    <div class="face three">
-      <span class="pip"></span>
-      <span class="pip"></span>
-      <span class="pip"></span>
-    </div>
-    <div class="face four">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-    <div class="face five">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-    <div class="face six">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-  </div>
-  <div class="container thumb">
-    <div class="face one-thumb">
-      <span class="pip"></span>
-    </div>
-    <div class="face two-thumb">
-      <span class="pip"></span>
-      <span class="pip"></span>
-    </div>
-    <div class="face three-thumb">
-      <span class="pip"></span>
-      <span class="pip"></span>
-      <span class="pip"></span>
-    </div>
-    <div class="face four-thumb">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-    <div class="face five-thumb">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-    <div class="face six-thumb">
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-      <div class="column">
-        <span class="pip"></span>
-        <span class="pip"></span>
-        <span class="pip"></span>
-      </div>
-    </div>
-
 </body>
 </html>
