@@ -58,8 +58,10 @@ var main = function() {
   if ($(window).width() < 1024) {
      $('.thumb').hide();
 
-     $('.heading').addClass('heading-mobile');
-     $('.face').addClass('face-mobile');
+     $('.heading-box').addClass('heading-mobile');
+     $('.container').addClass('mobile');
+     $('.pip').addClass('pip-mobile');
+     $('.pip').removeClass('pip');
      $('footer').addClass('footer-mobile');
   } else {
     $('.thumb').show();

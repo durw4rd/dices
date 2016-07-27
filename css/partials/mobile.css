@@ -1,18 +1,33 @@
-.heading-mobile {
+.heading-mobile .heading {
   font-size: 20px;
 }
 
-.face-mobile {
+.mobile .face {
   height: 100px;
   width: 100px;
   border-radius: 6px;
   padding: 5px;
-  border: 1px;
+  border: solid #888 1.5px;
 }
 
-.face-mobile .pip {
+.pip-mobile {
+  display: block;
   width: 15px;
   height: 15px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.two .pip-mobile:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.three .pip-mobile:nth-of-type(2) {
+  align-self: center;
+}
+
+.three .pip-mobile:nth-of-type(3) {
+  align-self: flex-end;
 }
 
 .footer-mobile section p {
