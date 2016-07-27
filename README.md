@@ -1,4 +1,4 @@
-# Faces of a dice generator
+# Dice Rolller
 
 Started building as an exercise to work with flexboxes, ended up finding this app at least a little use in real world - in case you wanna play and are missing a dice, this generator will save you :)
 
