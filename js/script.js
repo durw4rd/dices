@@ -52,8 +52,6 @@ var main = function() {
       TweenMax.to($('.thrown'), 0.3, {opacity: 1});
     }, 300);
 
-    // TweenMax.from($('.thrown'), 0.3, {delay: 0.3, x: '-150px'});
-
   });
 
   if ($(window).width() < 1024) {

@@ -1,0 +1,70 @@
+/* styling of dices */
+.face {
+  width: 200px;
+  height: 200px;
+  background-color: #999;
+  border-radius: 15px;
+  border: solid #888 3px;
+  margin: 40px;
+  padding: 15px;
+  transform: scale(1);
+  /*transition: all 250ms ease-in;*/
+}
+
+.pip {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.one, .one-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two, .three, .four, .five, .six, .two-thumb, .three-thumb, .four-thumb, .five-thumb, .six-thumb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-thumb, .two-thumb, .three-thumb, .four-thumb, .five-thumb, .six-thumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 14px;
+  padding: 5px;
+}
+
+.one-thumb .pip, .two-thumb .pip, .three-thumb .pip, .four-thumb .pip, .five-thumb .pip, .six-thumb .pip {
+  width: 20px;
+  height: 20px;
+}
+
+.two .pip:nth-of-type(2), .two-thumb .pip:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.three .pip:nth-of-type(2), .three-thumb .pip:nth-of-type(2) {
+  align-self: center;
+}
+
+.three .pip:nth-of-type(3), .three-thumb .pip:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.four .column, .five .column, .six .column, .four-thumb .column, .five-thumb .column, .six-thumb .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.five .column:nth-of-type(2), .five-thumb .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.selected-dice {
+  background-color: rgba(244,67,54 ,1);
+}
