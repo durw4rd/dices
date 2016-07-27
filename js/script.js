@@ -1,6 +1,6 @@
 var main = function() {
 
-  TweenMax.from($('.heading'), 1.5, {delay: 0.5, y: "-100", opacity: 0, ease: Elastic.easeOut});
+  TweenMax.from($('.heading'), 1.5, {delay: 1, y: "-100", opacity: 0, ease: Elastic.easeOut});
 
   var hideFaces = function() {
     $('.one').hide();
