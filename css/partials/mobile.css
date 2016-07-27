@@ -1,0 +1,24 @@
+.heading-mobile {
+  font-size: 20px;
+}
+
+.face-mobile {
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+  padding: 5px;
+  border: 1px;
+}
+
+.face-mobile .pip {
+  width: 15px;
+  height: 15px;
+}
+
+.footer-mobile section p {
+  font-size: 14px;
+}
+
+.footer-mobile section p:first-of-type {
+  display: none;
+}

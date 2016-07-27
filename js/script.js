@@ -57,6 +57,10 @@ var main = function() {
 
   if ($(window).width() < 1024) {
      $('.thumb').hide();
+
+     $('.heading').addClass('heading-mobile');
+     $('.face').addClass('face-mobile');
+     $('footer').addClass('footer-mobile');
   } else {
     $('.thumb').show();
   };
